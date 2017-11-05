@@ -22,6 +22,8 @@
     var grid = new WebGrid(source: selectedData, defaultSort: "Book", rowsPerPage: 5);
 }
 
+<link href='https://fonts.googleapis.com/css?family=Caesar Dressing' rel='stylesheet'>
+
 <h2>List of Scriptures</h2>
 
 <form method="get">
@@ -46,9 +48,9 @@
     columns: grid.Columns(
         grid.Column(format: @<a href="~/EditScripture?id=@item.ID">Edit</a>),
         grid.Column("Book"),
-        grid.Column("Chapter"),
-        grid.Column("Verse"),
-        grid.Column("Note"),
+        grid.Column("Chapter", canSort: false),
+        grid.Column("Verse", canSort: false),
+        grid.Column("Note", canSort: false),
         grid.Column("Date"),
         grid.Column(format: @<a href="~/DeleteScripture?id=@item.ID">Delete</a>)
     )

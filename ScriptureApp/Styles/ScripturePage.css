@@ -14,6 +14,7 @@ body {
 
 h1 {
     font-size: 1.6em;
+    font-family: "Caesar Dressing";
 }
 
 h2 {
@@ -51,7 +52,7 @@ h2 {
 .head {
     background-color: #E8E8E8;
     font-weight: bold;
-    color: #FFF;
+    color: black;
 }
 
 .grid th, .grid td {
